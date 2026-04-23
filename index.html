@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodleReports</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background: #f5f5f5; }
+        .container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 18px; margin: 10px 0; }
+        .btn:hover { background: #2980b9; }
+        .features { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .features li { margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MoodleReports</h1>
+        <p>Программа для извлечения данных о попытках студентов из резервных копий Moodle (.mbz) и создания индивидуальных HTML-отчётов.</p>
+        
+        <h2>Возможности</h2>
+        <ul class="features">
+            <li>Извлечение данных из backup-архивов Moodle (.mbz)</li>
+            <li>Создание отдельного HTML-отчёта для каждого студента</li>
+            <li>Отображение правильности каждого ответа</li>
+            <li>Встраивание изображений в отчёты</li>
+            <li>Фильтрация правильных/неправильных ответов</li>
+        </ul>
+        
+        <h2>Скачивание</h2>
+        <a class="btn" href="MoodleReports.exe">Скачать MoodleReports.exe</a>
+        
+        <h2>Инструкция</h2>
+        <p><a href="Инструкция/Инструкция_MoodleReports.html">Полная инструкция с картинками</a></p>
+        
+        <h2>Использование</h2>
+        <ol>
+            <li>Запустите <strong>MoodleReports.exe</strong></li>
+            <li>Выберите архив Moodle (.mbz) - кнопка "Открыть"</li>
+            <li>Выберите папку для сохранения - кнопка "Выбрать"</li>
+            <li>Нажмите "Выгрузить"</li>
+            <li>Результаты будут в выбранной папке</li>
+        </ol>
+        
+        <h2>Поддерживаемые типы вопросов</h2>
+        <table>
+            <tr><th>Тип</th><th>Описание</th></tr>
+            <tr><td>multichoice</td><td>Выбор одного ответа</td></tr>
+            <tr><td>multianswer</td><td>Cloze - несколько ответов</td></tr>
+            <tr><td>shortanswer</td><td>Текстовый ответ</td></tr>
+            <tr><td>match</td><td>Сопоставление</td></tr>
+            <tr><td>gapselect</td><td>Заполнение пропусков</td></tr>
+        </table>
+    </div>
+</body>
+</html>
